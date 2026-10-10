@@ -5,7 +5,7 @@ Separate container image that compiles bootc and bootupd for Arch
 ## How do I use this?
 It's simple!
 ```docker
-COPY --from=ghcr.io/distrolabs:abboc /pkgout /destination
+COPY --from=ghcr.io/distrolabs/abboc:latest /pkgout /destination
 ```
 You can then install the packages from the target system using
 ```docker

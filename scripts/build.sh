@@ -38,7 +38,7 @@ install_aur() {
 		# shellcheck disable=SC2154
 		# pacman -S "${depends[@]}" --noconfirm --needed
 		chown nobody:nobody -Rv .
-		sudo -u nobody env HOME=/home/nobody CARGO_HOME=/home/nobody/.cargo makepkg -dc --noconfirm --skippgpcheck
+		sudo -u nobody env HOME=/home/nobody CARGO_HOME=/home/nobody/.cargo makepkg -dc --noconfirm --skippgpcheck --nocheck
 		# shellcheck disable=SC2154
 		cp ./"${pkgname}"-[0-9]*.pkg.tar.zst /pkgout/ # /output reserved for bootc, different directory needed temporarily
 		pacman -U ./"${pkgname}"-[0-9]*.pkg.tar.zst --noconfirm
