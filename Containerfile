@@ -21,7 +21,4 @@ LABEL \
     org.opencontainers.image.description="Arch Bootc Builder or Compiler - Builds bootc for Arch" \
     org.opencontainers.image.url="https://distrolabs.github.io/ABBoC" \
     org.opencontainers.image.source="https://github.com/distrolabs/ABBoC" \
-    org.opencontainers.image.licenses="Apache-2.0" \
-    containers.bootc="1"
-
-RUN bootc container lint
+    org.opencontainers.image.licenses="Apache-2.0"
